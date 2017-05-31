@@ -1,0 +1,73 @@
+html {
+  background-color: #12C8F5;
+}
+header h1 {
+  position: absolute;
+  top: 2%;
+  left: 16%;
+  font-family: 'Bungee Shade', sans-serif;
+  text-shadow: 1px 1px 4px white;
+}
+
+header h1::before {
+  content: "D ";
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#about {
+  height: 30vh;
+  width: 70%;
+  position: absolute;
+  background-color: #9c3b9c;
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+  text-align: right;
+  transition: all 1s;
+  color: #9c3b9c;
+}
+
+#about .wrapper {
+  border: thick solid #9c3b9c;
+  padding: 10px;
+  background: #ea2f00;
+}
+
+#about h3 {
+  float: left;
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  font-family: orbitron;
+  transform-origin: 14px;
+  margin: 22vh 0 0 0;
+  padding-right: 300px;
+  color: white;
+  border-bottom: thick solid #9c3b9c;
+}
+
+#about h2 {
+  float: right;
+}
+
+#about:hover {
+  z-index: 1;
+  top: 22%;
+  height: 75vh;
+  font-size: 2rem;
+}
+
+#cover {
+  position: absolute;
+  top: 13.25%;
+  left: 15%;
+  height: 76.235vh;
+  text-align: center;
+  width: 73%;
+  background: white;
+}
