@@ -1,16 +1,6 @@
+/*/////////////////              GENERAL              /////////////////*/
 html {
   background-color: #12C8F5;
-}
-header h1 {
-  position: absolute;
-  top: 2%;
-  left: 16%;
-  font-family: 'Bungee Shade', sans-serif;
-  text-shadow: 1px 1px 4px white;
-}
-
-header h1::before {
-  content: "D ";
 }
 
 .wrapper {
@@ -20,6 +10,82 @@ header h1::before {
   overflow: hidden;
 }
 
+.tab {
+  transition: all 1s;
+}
+
+h1 {
+  font-size: 7vmin;
+}
+h2 {
+  font-size: 6vmin;
+}
+h3 {
+  font-size: 5vmin;
+}
+h4 {
+  font-size: 4vmin
+}
+h5 {
+  font-size: 3vmin;
+}
+p {
+  font-size: 2vmin;
+}
+
+/*/////////////////              HEADER              /////////////////*/
+header h1 {
+  position: absolute;
+  top: 2vh;
+  left: 16%;
+  font-family: 'Bungee Shade', sans-serif;
+  text-shadow: 1px 1px 4px white;
+  font-size: 4vmax;
+}
+
+header h1::before {
+  content: "D ";
+}
+
+/*/////////////////              TABS              /////////////////*/
+
+/*/////////////////              SKILLS              /////////////////*/
+
+#skills {
+  height: 7vh;
+  width: 14vw;
+  position: absolute;
+  background-color:#ffff85;
+  top: 70vh;
+  left: 5vw;
+}
+
+.ball {
+  border: 10px dotted black;
+  width: 5vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: all 5s;
+  transition-timing-function: ease-in-out;
+  box-sizing: border-box;
+}
+
+#skills:hover {
+  height: 67vh;
+  width: 80vw;
+  z-index: 5;
+  top: 20vh;
+}
+
+#skills:hover > .ball {
+  width: 20%;
+  left: 80%;
+  transform: rotate(3600deg);
+}
+
+/*/////////////////              ABOUT              /////////////////*/
 #about {
   height: 30vh;
   width: 70%;
@@ -29,7 +95,6 @@ header h1::before {
   left: 10%;
   z-index: -1;
   text-align: right;
-  transition: all 1s;
   color: #9c3b9c;
 }
 
@@ -58,16 +123,74 @@ header h1::before {
 #about:hover {
   z-index: 1;
   top: 22%;
-  height: 75vh;
+  height: 70vh;
   font-size: 2rem;
 }
 
+/*/////////////////              COVER              /////////////////*/
 #cover {
   position: absolute;
-  top: 13.25%;
-  left: 15%;
-  height: 76.235vh;
+  top: 13.25vh;
+  left: 15vw;
+  height: 73.235vh;
   text-align: center;
-  width: 73%;
+  width: 70vw;
   background: white;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+#cover img {
+  height: 10vh;
+  margin-top: 5vh;
+}
+
+/*/////////////////              MEDIA              /////////////////*/
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation : landscape) {
+/* Styles */
+  html{
+    background-color: blue;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) and (orientation : portrait) {
+  html{
+    background-color: red;
+  }
+}
+
+/* Smartphones Large (landscape) */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape){
+  html{
+    background-color: #dcdc00;
+  }
+}
+
+/* Smartphones Large (portrait) */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait){
+  html{
+    background-color: orange;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  html{
+    background-color: pink;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  html{
+    background-color: purple;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  html{
+    background-color: green;
+  }
 }
